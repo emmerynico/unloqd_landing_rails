@@ -1,38 +1,77 @@
 
-    <div class="row justify-content-center mt-0">
-      <div class="col-11 col-sm-9 col-md-7 col-lg-4 text-center p-0 mt-3 mb-2">
-        <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
-          <h2><strong><%= t(".title") %></strong></h2>
-          <div class="row">
-            <div class="col-md-12 mx-0 mx-auto">
-              <div id="msform">
-
-<%= simple_form_for [@booking], id: "msform" do |f| %>
-<div class="second_info">
-  <fieldset>
-    <div class="form-card">
-      <div>
-        <div class="row">
-          <div class="col"><%= f.input :firstname %> </div>
-          <div class="col-auto"><%= f.input :lastname %></div>
-        </div>
-        <%= f.input :email %>
-        <%= f.input :phone %>
-        <div class="row">
-          <div class="col-auto city-div" style="padding-right:5px;"> <%= f.input :age %> </div>
-
-        </div>
-        <%= f.input :acquisition_canal %>
-        <%= f.input :expectation, as: :text, :maxlength => 300 %>
-      </div>
-    </div>
-    <input type="submit" name="next" class="submit-button action-button" id="submit-button" value="envoyer"/>
-  </fieldset>
-</div>
+<!-- <div class="row justify-content-center mt-0" id="grad1"> -->
+    <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
+      <h2><strong>Formulaire d'inscription</strong></h2>
+      <div class="row">
+        <div class="col-md-12 mx-0 mx-auto">
+            <%= simple_form_for [@booking], id: "msform" do |f| %>
+          <div class="wrapper">
+             <div style="margin-bottom:80px;">
+             <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :workshop, collection: Booking::WORKSHOPS, label: false %> </div>
+                </div>
+              <label>Choisissez une date</label>
+            </div>
+          </div>
+            <div class="row">
+            <div class="input-data col-auto name-div">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :firstname, :as => :hidden, label: false %> </div>
+                </div>
+              <label style="left:12px !important;">First Name</label>
+            </div>
+            <div class="input-data col-auto name-div">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :lastname, :as => :hidden, label: false %> </div>
+                </div>
+              <label style="left:12px !important;">Last Name</label>
+            </div>
+          </div>
+          <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :age, :as => :hidden, label: false %> </div>
+                </div>
+              <label>Age</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :email, :as => :hidden, label: false %> </div>
+                </div>
+              <label>Email</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :phone, :as => :hidden, label: false %> </div>
+                </div>
+              <label>Numéro de téléphone</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :acquisition_canal, :as => :hidden, label: false %> </div>
+                </div>
+              <label>Comment nous avez-vous connu ?</label>
+            </div>
+            <div class="input-data">
+              <input type="text" required>
+                <div class="underline">
+                  <div><%= f.input :expectation, as: :text, :maxlength => 300, :as => :hidden, label: false %> </div>
+                </div>
+              <label>Qu'attendez-vous de la formation ?</label>
+            </div>
+                <input type="submit" name="next" class="submit-button action-button" id="submit-button" value="Envoyer"/>
+          </div>
 <% end %>
+   </div>
+      </div>
+<!--     </div> -->
+
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
+

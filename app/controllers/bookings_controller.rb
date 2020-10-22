@@ -4,9 +4,12 @@ class BookingsController < ApplicationController
     @booking = Booking.new
   end
 
-  private
 
+
+
+private
   def booking_params
-    params.require(:booking).permit(:last_name, :first_name, :email, :phone, :age, :expectation, :acquisition_canal, :workshop, presence: true)
+    params.require(:booking).permit(:lastname, :firstname, :email, :phone, :age, :expectation, :acquisition_canal, :workshop, presence: true)
   end
+
 end
