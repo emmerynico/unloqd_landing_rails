@@ -24,6 +24,10 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import { btnSign } from "./btnSign";
+import { logoSwitch } from "./logoSwitch";
+import { switchNav } from "./switchNav";
+
 
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';

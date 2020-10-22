@@ -1,2 +1,227 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+  <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+
+
+
+    <div id="page-top">
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WFWJSG8"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="mainNav">
+            <div class="container container-nav">
+
+
+                <div class="logo-div u_logo" style="margin-left: 0px;" id="content-desktop">
+                  <img src="<%= image_path 'logo_u.png' %>" alt="" class="logo-switch " id="slide" style="height:4rem;">
+                  <img src="<%= image_path 'logo_nloqd.png' %>" alt="" class="logo-switch nloqd" id="slide" style="height:4rem;">
+                  <img src= "<%= image_path 'logo_curly.png' %>"  alt="" class="logo-switch only-curly-start curly" id="slide" style="height:4rem;">
+                </div>
+                <div class="logo-div u_logo" style="margin-left: 0px;"  id="content-mobile">
+                  <img src= "<%= image_path 'logo_full.png' %>" alt="" class="logo-switch " id="slide" style="height:4rem;">
+                </div>
+
+            </div>
+        </nav>
+                <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class=" text-center">
+              <div class="">
+                <div class="content-left">
+                  <div class="text-left">
+                    <div class="text-container">
+                      <div class="title-div-b" style="padding-top:50px;">
+                      </div>
+                      <h4 class="" style="font-size:45px;">Votre site web <br>en une journée!</h4>
+                      <p class="text-black-50 mb-0" style="font-size:20px; ">Vous désirez avoir votre propre site web ou en créer un nouveau au goût du jour,
+                      cette formation pratique est faite pour vous.</p>
+                    </div>
+                  </div>
+                    <div class="header-btn">
+                      <button class="btn-sign call-to-action" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeHbQ6GZZzHLL2F7rIFdtQOXvX0IqMi-_QsWZHVwgJ6-bxRCw/viewform?usp=sf_link')">Réserver ma place</button>  </div>
+                </div>
+              </div>
+
+
+                </div>
+            </div>
+        </header>
+        <section class="projects-section bg-light" id="projects">
+            <div class="container parent-container">
+                <!-- Project One Row-->
+                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                    <div class="col-lg-6">
+                       <%= image_tag "demo-image-02.jpg", class: "img-fluid"%>
+                      <!-- <img class="img-fluid" src="../../images/demo-image-02.jpg" alt="" /> -->
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class=" text-center h-100 project"> <!-- bg-black -->
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-left formation_desript">
+                                    <h4 class="text-black">La formation en détail:</h4>
+                                    <p class="mb-0 text-black-50">
+                                      Vous arrivez avec une idée, vous repartez avec un site en ligne, comprenant (au minimum):
+                                      </p>
+                                      <ul class="mb-0 text-black-50">
+                                       <li>Une page d'accueil avec un "call to action"</li>
+                                       <li>Une page de contact</li>
+                                       <li>Des modules supplémentaires (réseaux sociaux, etc. )</li>
+                                      </ul>
+                                      <br>
+                                       <p class="mb-0 text-black-50">
+                                      Votre site sera créé sur un CMS, à la fois intuitif et ayant fait ses preuves.
+                                      Vous pourrez donc créer un site web, le mettre à jour et le gérer facilement, sans écrire une seule ligne de code.
+                                      Une formation adaptée aux besoins et envies de chacun, sans aucun prérequis, juste votre bonne humeur
+                                      <br> <br>Prix: €250 htva (lunch et rafraîchissement)
+                                      A apporter: un ordinateur portable (si vous n'en avez pas, veuillez nous prévenir à l'avance, nous trouverons une solution!)
+                                    </p>
+                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Two Row-->
+                <div class="row justify-content-center no-gutters">
+                    <div class="col-lg-6">
+                       <%= image_tag "demo-image-01.jpg", class: "img-fluid"%>
+                      <!-- <img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="" /> -->
+                    </div>
+                    <div class="col-lg-6 order-lg-first">
+                        <div class=" text-center h-100 project"> <!-- bg-black -->
+                            <div class="d-flex h-100">
+                                <div class="project-text w-100 my-auto text-center text-lg-right list-formations">
+                                    <h4 class="text-black">Nos dates:</h4>
+                                    <p class="mb-0 text-black-50">
+                                      <ul class="mb-0 text-black-50">
+                                      <li>10 novembre - <!-- Liège - --> Rue Chaussée 37B à 4342 Awans (<b>Liège</b>) (FR)</li>
+                                      <li>12 novembre - <!-- Wavre - --> Rue Haute 13 à 1300 <b>Wavre</b> (FR)</li>
+                                      <li>17 novembre - <!-- Namur - --> Rue de Fer 62 à 5000 <b>Namur</b> (FR)</li>
+                                      <li>19 novembre - <!-- Bruxelles - --> Rue du Midi  19 -21 à 1000 <b>Bruxelles</b> (FR)</li>
+                                      <!-- <li>24 novembre - Vilvoorde - Luchthavenlaan 10 à 1800 <b>Vilvoorde</b> (FR)</li> -->
+                                      <li>24 novembre - <!-- Vilvoorde - --> Luchthavenlaan 10 à 1800 <b>Vilvoorde</b> (NL)</li>
+                                      <li>26 novembre - <!-- Leuven - --> Herbert Hooverplein 17 à 3000 <b>Leuven</b> (NL)</li>
+                                      <li>1 décembre - <!-- Gent - --> Kortedagsteeg 13 - 15 à 9000 <b>Gent</b> (NL)</li>
+                                      <li>3 décembre - <!-- Antwerpen - --> Wapper 10 à 2000 <b>Antwerpen</b> (NL) </li>
+                                      <li>8 décembre - <!-- Hasselt - --> Fruitmarkt 11 à 3500 <b> Hasselt</b> (NL)</li>
+                                    </ul>
+                                    </p>
+                                     <div class="header-btn">
+                      <button class="btn-sign call-to-action" style="margin-top: 11px;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeHbQ6GZZzHLL2F7rIFdtQOXvX0IqMi-_QsWZHVwgJ6-bxRCw/viewform?usp=sf_link')">Réserver ma place</button>
+                    </div>
+                                    <hr class="d-none d-lg-block mb-0 mr-0" style="margin-left: 0 !important;" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!-- Featured Project Row-->
+                <div class="row align-items-center no-gutters mb-4 mb-lg-5" style="padding-top: 8rem;">
+                    <div class="col-xl-8 col-lg-7">
+
+                        <!-- <img  class="img-fluid mb-3 mb-lg-0" src="assets/img/demo-image-00.jpg" style="padding-bottom:50px" alt="" /> -->
+
+                    </div>
+                    <div class="col-xl-8 col-lg-8 align-items-center mx-auto">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4>Qui suis-je? </h4>
+                            <p class="text-black-50 mb-0">Après quelques années dans une multinationale
+                            où je m’occupais de développer la stratégie de distribution dans différents
+                          pays, j'ai décidé de me réorienter profressionellement. Ayant toujours été
+                        intéressée par le milieu de la tech, je me suis formée en développement web et en
+                      marketing digital.  Depuis lors, je donne des formations en développement web aux
+                       adultes ainsi que des ateliers de robotique et de codage aux enfants.
+                     Aujourd’hui, mes deux associés et moi avons créé Unloqd, une agence digitale,
+                   par envie de partager nos connaissances et notre passion avec ceux qui désirent
+                 améliorer leur présence sur le web et les réseaux sociaux. </p>
+                            <p class="hand-font">Mailys</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </section>
+        <!-- Signup-->
+        <section class="signup-section" id="signup">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-8 mx-auto text-center">
+                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                        <h2 class="text-black mb-5">Inscris-toi pour recevoir nos updates!</h2>
+                        <form name="submit-to-google-sheet" class="form-inline d-flex ">
+                            <input name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup" id="inputEmail" type="email" placeholder="Ton adresse mail..." />
+                            <button class="btn btn-primary mx-auto btn-signup" type="submit">M'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbyXU87_CYk-K2uZa_evuv6MYYMGSfAzs9Xcm7HAwMlYu2n0RER-/exec'
+              const form = document.forms['submit-to-google-sheet']
+
+              form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                  .then(response => console.log('Success!', response))
+                  .catch(error => console.error('Error!', error.message))
+              })
+            </script>
+        </section>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Adresse</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">Rue de l'église 17, Rhode St Genese 1640</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50"><a href="#!">mailys@unloqd.be</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Téléphone</h4>
+                                <hr class="my-4" />
+                                <div class="small text-black-50">+32 487 90 44 04</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="https://www.instagram.com/unloqd"><i class="fab fa-instagram"></i></a>
+                    <a class="mx-2" href="https://www.facebook.com/Unloqd.be" target="_blank"> <i class="fab fa-facebook-f"></i></a>
+                    <a class="mx-2" href="https://www.linkedin.com/in/mailysrenson/"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+ <div class=" d-flex justify-content-center" style="text-align: right;">
+                   <a  style="font-size: 20px; padding-top: 25px;" href="nl.html">Nederlands</a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright © Unloqd 2020</div></footer>
+    </div>
