@@ -1,77 +1,79 @@
 
 <!-- <div class="row justify-content-center mt-0" id="grad1"> -->
+<div class="div-gene-form">
+       <div class="logo-div u_logo logo-form" style="margin-left: 0px;">
+        <img src= "<%= image_path 'logo.png' %>" alt="" class="logo-switch " id="slide" style="height:4rem;">
+      </div>
+    <div class="container">
     <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
       <h2><strong>Formulaire d'inscription</strong></h2>
+      <div class="underline-title"></div>
       <div class="row">
         <div class="col-md-12 mx-0 mx-auto">
-            <%= simple_form_for [@booking], id: "msform" do |f| %>
+
+            <%= form_for(@booking) do |f| %>
+
           <div class="wrapper">
-             <div style="margin-bottom:80px;">
-             <div class="input-data">
-              <input type="text" required>
-                <div class="underline">
-                  <div><%= f.input :workshop, collection: Booking::WORKSHOPS, label: false %> </div>
-                </div>
-              <label>Choisissez une date</label>
-            </div>
+             <div style="margin-bottom:35px;">
+              <label style="color:grey;  font-size:16px;">Choisissez une date</label>
+            <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true   %> </div>
+
           </div>
             <div class="row">
+
+
             <div class="input-data col-auto name-div">
-              <input type="text" required>
+                  <%= f.text_field :firstname, class:"string required", required: true  %>
                 <div class="underline">
-                  <div><%= f.input :firstname, :as => :hidden, label: false %> </div>
                 </div>
               <label style="left:12px !important;">First Name</label>
             </div>
+
             <div class="input-data col-auto name-div">
-              <input type="text" required>
+                  <%= f.text_field :lastname, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :lastname, :as => :hidden, label: false %> </div>
                 </div>
               <label style="left:12px !important;">Last Name</label>
             </div>
           </div>
           <div class="input-data">
-              <input type="text" required>
+                  <%= f.text_field :age, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :age, :as => :hidden, label: false %> </div>
                 </div>
               <label>Age</label>
             </div>
             <div class="input-data">
-              <input type="text" required>
+                  <%= f.text_field :email, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :email, :as => :hidden, label: false %> </div>
                 </div>
               <label>Email</label>
             </div>
             <div class="input-data">
-              <input type="text" required>
+                  <%= f.text_field :phone, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :phone, :as => :hidden, label: false %> </div>
                 </div>
               <label>Numéro de téléphone</label>
             </div>
             <div class="input-data">
-              <input type="text" required>
+                  <%= f.text_field :acquisition_canal, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :acquisition_canal, :as => :hidden, label: false %> </div>
                 </div>
               <label>Comment nous avez-vous connu ?</label>
             </div>
             <div class="input-data">
-              <input type="text" required>
+                <%= f.text_field :expectation, class:"string required", required: true %>
                 <div class="underline">
-                  <div><%= f.input :expectation, as: :text, :maxlength => 300, :as => :hidden, label: false %> </div>
                 </div>
               <label>Qu'attendez-vous de la formation ?</label>
             </div>
-                <input type="submit" name="next" class="submit-button action-button" id="submit-button" value="Envoyer"/>
+                <%= f.submit 'Envoyer', class:"submit-button action-button" %>
+                <!-- <input type="submit" name="next" class="submit-button action-button btn-javascript" id="submit-button" value="Envoyer"/> -->
           </div>
 <% end %>
    </div>
       </div>
 <!--     </div> -->
-
+</div>
+</div>
 </div>
 

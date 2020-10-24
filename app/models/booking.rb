@@ -1,5 +1,5 @@
 class Booking < ApplicationRecord
-  validates :last_name, :first_name, :email, :phone, :age, :expectation, :acquisition_canal, :workshop, presence: true
+  validates :lastname, :firstname, :email, :phone, :age, :expectation, :acquisition_canal, :workshop, presence: true
   WORKSHOPS = [
         "10 novembre - Rue Chaussée 37B à 4342 Awans (Liège) (FR)",
         "12 novembre - Rue Haute 13 à 1300 Wavre (FR)",

@@ -311,8 +311,9 @@ body{
 
 }
 .wrapper{
-  width: 800px;
-  background: #fff;
+  // width: 800px;
+  width: auto;
+  background: transparent;
   padding-top: 50px;
   border-radius: 8px;
 }
@@ -374,6 +375,30 @@ body{
   border: 0px;
 }
 
+.underline-title {
+    width: 50px;
+    height: 10px;
+    border-bottom: 4px solid #6CA4A1;
+    margin-bottom: 10px;
+}
+
+.logo-form {
+  margin-left: 0px;
+  z-index: 50;
+  padding-top: 19px;
+  padding-bottom: 48px;
+  padding-left: 0px;
+}
+
+.div-gene-form {
+width:95vw;
+}
+
+#booking_workshop {
+      padding-bottom: 4px;
+    padding-top: 4px;
+    padding-left: 3px;
+}
 
 
 
