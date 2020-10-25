@@ -11,17 +11,15 @@
       <div class="row">
         <div class="col-md-12 mx-0 mx-auto">
 
-            <%= form_for(@booking) do |f| %>
+            <%= form_for(@booking,  html: {id: 'full-form'})  do |f| %>
 
           <div class="wrapper">
              <div style="margin-bottom:35px;">
               <label style="color:grey;  font-size:16px;">Choisissez une date</label>
-            <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true   %> </div>
-
+            <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true, required: true   %> </div>
+              <div class="error_date"></div>
           </div>
             <div class="row">
-
-
             <div class="input-data col-auto name-div">
                   <%= f.text_field :firstname, class:"string required", required: true  %>
                 <div class="underline">
@@ -72,8 +70,61 @@
 <% end %>
    </div>
       </div>
-<!--     </div> -->
 </div>
 </div>
 </div>
+
+<script>
+
+let workshopInput = document.querySelector("#booking_workshop")
+let submitButton = document.querySelector(".submit-button")
+submitButton.setAttribute("type", "button");
+let errorDate = document.querySelector(".error_date")
+workshopInput.addEventListener('change', event => {
+  if (workshopInput.value != "") {
+    submitButton.setAttribute("type", "submit");
+    errorDate.innerHTML = ``
+  } else {
+    submitButton.setAttribute("type", "button");
+    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+  }
+});
+
+
+submitButton.addEventListener('click', e => {
+  if (workshopInput.value == '') {
+    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+  } else {
+  }
+})
+
+  let fullForm = document.querySelector("#full-form")
+ fullForm.addEventListener('submit', e => {
+    setTimeout(popup, 100);
+    function popup () {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+       text: 'Inscription envoyée!',
+      showConfirmButton: false,
+      timer: 3000
+    })
+    }
+  })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
