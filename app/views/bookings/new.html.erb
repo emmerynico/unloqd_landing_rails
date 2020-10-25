@@ -1,38 +1,130 @@
 
-    <div class="row justify-content-center mt-0">
-      <div class="col-11 col-sm-9 col-md-7 col-lg-4 text-center p-0 mt-3 mb-2">
-        <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
-          <h2><strong><%= t(".title") %></strong></h2>
-          <div class="row">
-            <div class="col-md-12 mx-0 mx-auto">
-              <div id="msform">
-
-<%= simple_form_for [@booking], id: "msform" do |f| %>
-<div class="second_info">
-  <fieldset>
-    <div class="form-card">
-      <div>
-        <div class="row">
-          <div class="col"><%= f.input :firstname %> </div>
-          <div class="col-auto"><%= f.input :lastname %></div>
-        </div>
-        <%= f.input :email %>
-        <%= f.input :phone %>
-        <div class="row">
-          <div class="col-auto city-div" style="padding-right:5px;"> <%= f.input :age %> </div>
-
-        </div>
-        <%= f.input :acquisition_canal %>
-        <%= f.input :expectation, as: :text, :maxlength => 300 %>
+<!-- <div class="row justify-content-center mt-0" id="grad1"> -->
+<div class="div-gene-form">
+       <div class="logo-div u_logo logo-form" style="margin-left: 0px;">
+        <img src= "<%= image_path 'logo.png' %>" alt="" class="logo-switch " id="slide" style="height:4rem;">
       </div>
-    </div>
-    <input type="submit" name="next" class="submit-button action-button" id="submit-button" value="envoyer"/>
-  </fieldset>
-</div>
+    <div class="container">
+    <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
+      <h2><strong>Formulaire d'inscription</strong></h2>
+      <div class="underline-title"></div>
+      <div class="row">
+        <div class="col-md-12 mx-0 mx-auto">
+
+            <%= form_for(@booking,  html: {id: 'full-form'})  do |f| %>
+
+          <div class="wrapper">
+             <div style="margin-bottom:35px;">
+              <label style="color:grey;  font-size:16px;">Choisissez une date</label>
+            <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true, required: true   %> </div>
+              <div class="error_date"></div>
+          </div>
+            <div class="row">
+            <div class="input-data col-auto name-div">
+                  <%= f.text_field :firstname, class:"string required", required: true  %>
+                <div class="underline">
+                </div>
+              <label style="left:12px !important;">First Name</label>
+            </div>
+
+            <div class="input-data col-auto name-div">
+                  <%= f.text_field :lastname, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label style="left:12px !important;">Last Name</label>
+            </div>
+          </div>
+          <div class="input-data">
+                  <%= f.text_field :age, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label>Age</label>
+            </div>
+            <div class="input-data">
+                  <%= f.text_field :email, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label>Email</label>
+            </div>
+            <div class="input-data">
+                  <%= f.text_field :phone, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label>Numéro de téléphone</label>
+            </div>
+            <div class="input-data">
+                  <%= f.text_field :acquisition_canal, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label>Comment nous avez-vous connu ?</label>
+            </div>
+            <div class="input-data">
+                <%= f.text_field :expectation, class:"string required", required: true %>
+                <div class="underline">
+                </div>
+              <label>Qu'attendez-vous de la formation ?</label>
+            </div>
+                <%= f.submit 'Envoyer', class:"submit-button action-button" %>
+                <!-- <input type="submit" name="next" class="submit-button action-button btn-javascript" id="submit-button" value="Envoyer"/> -->
+          </div>
 <% end %>
+   </div>
+      </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
+
+<script>
+
+let workshopInput = document.querySelector("#booking_workshop")
+let submitButton = document.querySelector(".submit-button")
+submitButton.setAttribute("type", "button");
+let errorDate = document.querySelector(".error_date")
+workshopInput.addEventListener('change', event => {
+  if (workshopInput.value != "") {
+    submitButton.setAttribute("type", "submit");
+    errorDate.innerHTML = ``
+  } else {
+    submitButton.setAttribute("type", "button");
+    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+  }
+});
+
+
+submitButton.addEventListener('click', e => {
+  if (workshopInput.value == '') {
+    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+  } else {
+  }
+})
+
+  let fullForm = document.querySelector("#full-form")
+ fullForm.addEventListener('submit', e => {
+    setTimeout(popup, 100);
+    function popup () {
+    Swal.fire({
+      position: 'center',
+      icon: 'success',
+       text: 'Inscription envoyée!',
+      showConfirmButton: false,
+      timer: 3000
+    })
+    }
+  })
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
