@@ -44,3 +44,58 @@ nl:
       workshop: "Kies een datum"
       send: "Doorsturen"
       formTitle: "Jouw contactgegevens"
+
+  pages:
+    home:
+      titleMain_html: "Jouw website <br>in 1 dag!"
+      subtitle: "Droom je ervan om je eigen website te hebben of deze zelf te ontwikkelen,
+                        volgens de hedendaagse normen? Dan is deze praktijkgerichte workshop zeker iets voor jou!"
+      bookingBtn: Boek nu
+      detailsWorkshop_html: "<h4 class='text-black'>De opleiding in detail:</h4>
+                                    <p class='mb-0 text-black-50'>
+                                      Je komt aan met je eigen idee in gedachte, aan het einde van de workshop vertrek je met een website, die minstens bestaat uit de volgende onderdelen:
+                                      </p>
+                                      <ul class='mb-0 text-black-50'>
+                                       <li>Homepage met ‘call to action’</li>
+                                       <li>Contactpagina</li>
+                                       <li>Extra add-ons (bv.: sociale media,...)
+                                      </li>
+                                      </ul>
+                                      <br>
+                                       <p class='mb-0 text-black-50'>
+                                        Jouw website wordt ontwikkeld op een CMS, die intuïtief aanvoelt en een reeds bewezen track record heeft. Je kan dus jouw eigen website ontwikkelen, onderhouden en beheren, zonder enige voorkennis van het coderen!
+                                        Je kan je verwachten aan een opleiding die aangepast is aan de noden en wensen van eenieder, zonder vereiste voorkennis. Het enige wat we van je verlangen is een goed humeur en de nodige motivatie!
+                                      <br> <br>Prijs: €250 excl. BTW (lunch en drankje inbegrepen).
+                                      Mee te brengen: laptop (indien je hier niet over beschikt, gelieve ons dan vooraf op de hoogte te brengen. Zo kunnen we samen een oplossing zoeken!)
+                                    </p>
+                                    <hr class='d-none d-lg-block mb-0 ml-0' />"
+      workshopDates_html: "<h4 class='text-black'>Komende opleidingen:</h4>
+                                    <p class='mb-0 text-black-50'>
+                                      <ul class='mb-0 text-black-50'>
+                                      <li>10 November - <!-- Liège - --> Rue Chaussée 37B in 4342 Awans (<b>Liège</b>) (FR)</li>
+                                      <li>12 November - <!-- Wavre - --> Rue Haute 13 in 1300 <b>Wavre</b> (FR)</li>
+                                      <li>17 November - <!-- Namur - --> Rue de Fer 62 in 5000 <b>Namur</b> (FR)</li>
+                                      <li>19 November - <!-- Bruxelles - --> Rue du Midi  19 -21 in 1000 <b>Bruxelles</b> (FR)</li>
+                                      <!-- <li>24 November -  Vilvoorde -  Luchthavenlaan 10 in 1800 <b>Vilvoorde</b> (FR)</li> -->
+                                      <li>24 November - <!-- Vilvoorde - --> Luchthavenlaan 10 in 1800 <b>Vilvoorde</b> (NL)</li>
+                                      <li>26 November - <!-- Leuven - --> Herbert Hooverplein 17 in 3000 <b>Leuven</b> (NL)</li>
+                                      <li>1 December - <!-- Gent - --> Kortedagsteeg 13 - 15 in 9000 <b>Gent</b> (NL)</li>
+                                      <li>3 December - <!-- Antwerpen - --> Wapper 10 in 2000 <b>Antwerpen</b> (NL) </li>
+                                      <li>8 December - <!-- Hasselt - --> Fruitmarkt 11 in 3500 <b> Hasselt</b> (NL)</li>
+                                    </ul>
+                                    </p>"
+      mailysDescript_html: "<h4>Wie ben ik?</h4>
+                            <p class='text-black-50 mb-0'>Nadat ik enkele jaren voor een multinational werkte als Strategic
+                              Development Manager voor de Export & Distributie in verschillende landen, besloot ik mijn professionele
+                               carrière een andere wending te geven. Ik besloot mijn droom en interesses achterna te gaan en ontwikkelde
+                               mezelf binnen de techwereld als web developer en digital marketeer.
+                               Sinds deze nieuwe wending, geef ik ook opleidingen in web development aan volwassenen én workshops robotica en coderen voor kinderen.
+                               Recent creëerde ik samen met mijn 2 vennoten “Unloqd”, een digital agency, die ontstond uit onze passie en wens om onze kennis te delen
+                               met diegenen die hun aanwezigheid op het web en  sociale media willen verbeteren.
+                            </p>
+                            <p class='hand-font'>Mailys</p>"
+      signup: "Registreer voor regelmatige updates!"
+      sign: "Registreer"
+      yourmail_html: "<input name='email' class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup' id='inputEmail' type='email' placeholder='Jouw emailadres...' required/>"
+      address: "Adres"
+      phone: "Telefoon"
