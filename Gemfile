@@ -6,6 +6,12 @@ ruby '2.6.6'
 # GEM PERSO
 gem 'devise'
 
+gem 'activeadmin'
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
