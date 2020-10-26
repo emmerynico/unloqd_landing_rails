@@ -1,0 +1,17 @@
+fr:
+  bookings:
+    new:
+      email: "Adresse email"
+      phone: "Numéro de téléphone"
+      firstname: "Prénon"
+      lastname: "Nom de famille"
+      age: "Age"
+      expectation: "Qu'attendez-vous de la formation ?"
+      acquisition_canal: "Comment nous avez-vous connus ?"
+      workshop: "Choisissez une date"
+      send: "Envoyer"
+      formTitle: "Formulaire d'inscription"
+
+  pages:
+    home:
+      titleMain_html: "Votre site web <br> en une journée!"

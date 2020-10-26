@@ -1,0 +1,13 @@
+nl:
+  bookings:
+    new:
+      email: "Email"
+      phone: "Telefoonnummer"
+      firstname: "Voornaam"
+      lastname: "Naam"
+      age: "Leeftijd"
+      expectation: "Wat verwacht je van deze opleiding ?"
+      acquisition_canal: "Hoe heb je ons gevonden ?"
+      workshop: "Kies een datum"
+      send: "Doorsturen"
+      formTitle: "Jouw contactgegevens"
