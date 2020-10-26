@@ -35,13 +35,12 @@
                       <div class="title-div-b" style="padding-top:50px;">
                       </div>
                       <h4 class="" style="font-size:45px;"> <%= t('.titleMain_html') %></h4>
-                      <p class="text-black-50 mb-0" style="font-size:20px; ">Vous désirez avoir votre propre site web ou en créer un nouveau au goût du jour,
-                      cette formation pratique est faite pour vous.</p>
+                      <p class="text-black-50 mb-0" style="font-size:20px; "><%= t('.subtitle') %></p>
                     </div>
                   </div>
                     <div class="header-btn">
                     <%= link_to new_booking_path, class: "nav-item reserver" do  %>
-                      <button class="btn-sign call-to-action">Réserver ma place</button>  </div>
+                      <button class="btn-sign call-to-action"><%= t('.bookingBtn') %></button>  </div>
                     <% end %>
                 </div>
               </div>
@@ -63,24 +62,7 @@
                         <div class=" text-center h-100 project"> <!-- bg-black -->
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left formation_desript">
-                                    <h4 class="text-black">La formation en détail:</h4>
-                                    <p class="mb-0 text-black-50">
-                                      Vous arrivez avec une idée, vous repartez avec un site en ligne, comprenant (au minimum):
-                                      </p>
-                                      <ul class="mb-0 text-black-50">
-                                       <li>Une page d'accueil avec un "call to action"</li>
-                                       <li>Une page de contact</li>
-                                       <li>Des modules supplémentaires (réseaux sociaux, etc. )</li>
-                                      </ul>
-                                      <br>
-                                       <p class="mb-0 text-black-50">
-                                      Votre site sera créé sur un CMS, à la fois intuitif et ayant fait ses preuves.
-                                      Vous pourrez donc créer un site web, le mettre à jour et le gérer facilement, sans écrire une seule ligne de code.
-                                      Une formation adaptée aux besoins et envies de chacun, sans aucun prérequis, juste votre bonne humeur
-                                      <br> <br>Prix: €250 htva (lunch et rafraîchissement)
-                                      A apporter: un ordinateur portable (si vous n'en avez pas, veuillez nous prévenir à l'avance, nous trouverons une solution!)
-                                    </p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
+                                  <%= t('.detailsWorkshop_html') %>
 
                                 </div>
                             </div>
@@ -97,24 +79,10 @@
                         <div class=" text-center h-100 project"> <!-- bg-black -->
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right list-formations">
-                                    <h4 class="text-black">Nos dates:</h4>
-                                    <p class="mb-0 text-black-50">
-                                      <ul class="mb-0 text-black-50">
-                                      <li>10 novembre - <!-- Liège - --> Rue Chaussée 37B à 4342 Awans (<b>Liège</b>) (FR)</li>
-                                      <li>12 novembre - <!-- Wavre - --> Rue Haute 13 à 1300 <b>Wavre</b> (FR)</li>
-                                      <li>17 novembre - <!-- Namur - --> Rue de Fer 62 à 5000 <b>Namur</b> (FR)</li>
-                                      <li>19 novembre - <!-- Bruxelles - --> Rue du Midi  19 -21 à 1000 <b>Bruxelles</b> (FR)</li>
-                                      <!-- <li>24 novembre - Vilvoorde - Luchthavenlaan 10 à 1800 <b>Vilvoorde</b> (FR)</li> -->
-                                      <li>24 novembre - <!-- Vilvoorde - --> Luchthavenlaan 10 à 1800 <b>Vilvoorde</b> (NL)</li>
-                                      <li>26 novembre - <!-- Leuven - --> Herbert Hooverplein 17 à 3000 <b>Leuven</b> (NL)</li>
-                                      <li>1 décembre - <!-- Gent - --> Kortedagsteeg 13 - 15 à 9000 <b>Gent</b> (NL)</li>
-                                      <li>3 décembre - <!-- Antwerpen - --> Wapper 10 à 2000 <b>Antwerpen</b> (NL) </li>
-                                      <li>8 décembre - <!-- Hasselt - --> Fruitmarkt 11 à 3500 <b> Hasselt</b> (NL)</li>
-                                    </ul>
-                                    </p>
+                                    <%= t('.workshopDates_html') %>
                                      <div class="header-btn">
                                       <%= link_to new_booking_path, class: "nav-item reserver" do  %>
-                      <button class="btn-sign call-to-action" style="margin-top: 11px;">Réserver ma place</button>
+                      <button class="btn-sign call-to-action" style="margin-top: 11px;"><%= t('.bookingBtn') %></button>
                     <% end %>
                     </div>
                                     <hr class="d-none d-lg-block mb-0 mr-0" style="margin-left: 0 !important;" />
@@ -133,17 +101,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-8 align-items-center mx-auto">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Qui suis-je? </h4>
-                            <p class="text-black-50 mb-0">Après quelques années dans une multinationale
-                            où je m’occupais de développer la stratégie de distribution dans différents
-                          pays, j'ai décidé de me réorienter profressionellement. Ayant toujours été
-                        intéressée par le milieu de la tech, je me suis formée en développement web et en
-                      marketing digital.  Depuis lors, je donne des formations en développement web aux
-                       adultes ainsi que des ateliers de robotique et de codage aux enfants.
-                     Aujourd’hui, mes deux associés et moi avons créé Unloqd, une agence digitale,
-                   par envie de partager nos connaissances et notre passion avec ceux qui désirent
-                 améliorer leur présence sur le web et les réseaux sociaux. </p>
-                            <p class="hand-font">Mailys</p>
+                            <%= t('.mailysDescript_html') %>
                         </div>
                     </div>
                 </div>
@@ -157,10 +115,10 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-black mb-5">Inscris-toi pour recevoir nos updates!</h2>
+                        <h2 class="text-black mb-5"><%= t('.signup')  %></h2>
                         <form name="submit-to-google-sheet" class="form-inline d-flex ">
-                            <input name="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup" id="inputEmail" type="email" placeholder="Ton adresse mail..." />
-                            <button class="btn btn-primary mx-auto btn-signup" type="submit">M'inscrire</button>
+                            <%= t('.yourmail_html')  %>
+                            <button class="btn btn-primary mx-auto btn-signup" type="submit"><%= t('.sign')  %></button>
                         </form>
                     </div>
                 </div>
@@ -186,7 +144,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Adresse</h4>
+                                <h4 class="text-uppercase m-0"><%= t('.address')  %></h4>
                                 <hr class="my-4" />
                                 <div class="small text-black-50">Rue de l'église 17, Rhode St Genese 1640</div>
                             </div>
@@ -206,7 +164,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Téléphone</h4>
+                                <h4 class="text-uppercase m-0"><%= t('.phone')  %></h4>
                                 <hr class="my-4" />
                                 <div class="small text-black-50"> <a href="tel:+32 487 90 44 04">+32 487 90 44 04</a> </div>
                             </div>
