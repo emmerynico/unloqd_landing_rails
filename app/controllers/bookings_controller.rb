@@ -7,6 +7,7 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
+      BookingMailer.new_booking(@booking).deliver_now
       sleep(3)
       # BookingMailer.new_booking(@booking).deliver_now
       redirect_to root_path
