@@ -1,4 +1,8 @@
 fr:
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+
   bookings:
     new:
       email: "Adresse email"

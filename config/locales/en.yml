@@ -31,3 +31,23 @@
 
 en:
   hello: "Hello world"
+  admin:
+  roles:
+  sidebar:
+  roles_list: "Roles list"
+  booking:
+
+  time:
+   formats:
+     long: "%Y-%m-%d %H:%M:%S"
+
+
+
+
+
+
+
+
+
+
+
