@@ -6,7 +6,7 @@
       </div>
     <div class="container">
     <div class="card px-0 pt-4 pb-0 mt-3 mb-3 card-booking">
-      <h2><strong>Formulaire d'inscription</strong></h2>
+      <h2><strong><%= t('.formTitle') %></strong></h2>
       <div class="underline-title"></div>
       <div class="row">
         <div class="col-md-12 mx-0 mx-auto">
@@ -15,7 +15,7 @@
 
           <div class="wrapper">
              <div style="margin-bottom:35px;">
-              <label style="color:grey;  font-size:16px;">Choisissez une date</label>
+              <label style="color:grey;  font-size:16px;"><%= t('.workshop') %></label>
             <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true, required: true   %> </div>
               <div class="error_date"></div>
           </div>
@@ -24,47 +24,47 @@
                   <%= f.text_field :firstname, class:"string required", required: true  %>
                 <div class="underline">
                 </div>
-              <label style="left:12px !important;">First Name</label>
+              <label style="left:12px !important;"><%= t('.firstname') %></label>
             </div>
 
             <div class="input-data col-auto name-div">
                   <%= f.text_field :lastname, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label style="left:12px !important;">Last Name</label>
+              <label style="left:12px !important;"><%= t('.lastname') %></label>
             </div>
           </div>
           <div class="input-data">
                   <%= f.text_field :age, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label>Age</label>
+              <label><%= t('.age') %></label>
             </div>
             <div class="input-data">
                   <%= f.text_field :email, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label>Email</label>
+              <label><%= t('.email') %></label>
             </div>
             <div class="input-data">
                   <%= f.text_field :phone, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label>Numéro de téléphone</label>
+              <label><%= t('.phone') %></label>
             </div>
             <div class="input-data">
                   <%= f.text_field :acquisition_canal, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label>Comment nous avez-vous connu ?</label>
+              <label><%= t('.acquisition_canal') %></label>
             </div>
             <div class="input-data">
                 <%= f.text_field :expectation, class:"string required", required: true %>
                 <div class="underline">
                 </div>
-              <label>Qu'attendez-vous de la formation ?</label>
+              <label><%= t('.expectation') %> </label>
             </div>
-                <%= f.submit 'Envoyer', class:"submit-button action-button" %>
+                <%= f.submit t('.send'), class:"submit-button action-button" %>
                 <!-- <input type="submit" name="next" class="submit-button action-button btn-javascript" id="submit-button" value="Envoyer"/> -->
           </div>
 <% end %>
