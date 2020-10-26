@@ -40,7 +40,9 @@
                     </div>
                   </div>
                     <div class="header-btn">
-                      <button class="btn-sign call-to-action" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeHbQ6GZZzHLL2F7rIFdtQOXvX0IqMi-_QsWZHVwgJ6-bxRCw/viewform?usp=sf_link')">Réserver ma place</button>  </div>
+                    <%= link_to new_booking_path, class: "nav-item reserver" do  %>
+                      <button class="btn-sign call-to-action">Réserver ma place</button>  </div>
+                    <% end %>
                 </div>
               </div>
 
@@ -111,7 +113,9 @@
                                     </ul>
                                     </p>
                                      <div class="header-btn">
-                      <button class="btn-sign call-to-action" style="margin-top: 11px;" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeHbQ6GZZzHLL2F7rIFdtQOXvX0IqMi-_QsWZHVwgJ6-bxRCw/viewform?usp=sf_link')">Réserver ma place</button>
+                                      <%= link_to new_booking_path, class: "nav-item reserver" do  %>
+                      <button class="btn-sign call-to-action" style="margin-top: 11px;">Réserver ma place</button>
+                    <% end %>
                     </div>
                                     <hr class="d-none d-lg-block mb-0 mr-0" style="margin-left: 0 !important;" />
                                 </div>
