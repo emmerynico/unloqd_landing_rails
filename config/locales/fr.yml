@@ -1,4 +1,35 @@
 fr:
+  time:
+      formats:
+        long: "%Y-%m-%d %H:%M:%S"
+  subject_new_booking: "Votre inscription à la formation 'Créez votre site web en une journée'"
+  booking_mailer:
+    new_booking:
+      greeting_html: "Bonjour %{firstname},<br><br>"
+      mail_content_html: "Vous vous êtes inscrits à la formation « Créez votre site web en une journée » et nous vous remercions.<br><br>
+      La formation se tiendra de 9.00 à 17.00 dans une des agences Connections, notre partenaire. <br>
+      Nous vous accueillerons dès 8.45 avec un bon café.<br><br>
+      Pour que votre inscription soit complètement valide, Veuillez verser la somme de €302,5 (€250 + €52,5 de TVA) sur le numéro de compte suivant <strong>avant le 3 novembre 2020</strong>: <br>
+      Maïlys Renson <br>
+      BE69 0636 8884 9878 <br>
+      Communication: Nom+Prénom+Ville <br><br>
+      Une facture vous parviendra par la suite (si vous avez un numéro de TVA merci de nous le communiquer par retour de mail). <br><br>
+      Dans l’état actuel de la situation sanitaire, nos formations sont maintenues avec toutes les mesures nécessaires.  Nous suivons la situation jour après jour.  En fonction de l’évolution des mesures nous pourrions post-poser l’une ou l’autre formation.  Dans le cas où la date ne vous conviendrait pas, un remboursement vous sera fait.<br><br>
+      Pour le jour de la formation veuillez prévoir:<br>
+      <ul>
+      <li>Un ordinateur portable (si vous n’en avez pas merci de nous le faire savoir nous trouverons une solution).</li>
+      <li>Des photos de bonne qualité de l’activité que vous voulez promouvoir.</li>
+      <li>Les textes que vous voulez utiliser sur votre site (description de ce que vous proposez, présentation de qui vous êtes, etc.)</li>
+      <li>Votre masque
+      </ul> <br>
+      Durant la journée nous vous accompagnerons dans la création de votre site. Nous vous donnerons les trucs et astuces pour un site vraiment efficace qui vous ressemble.<br><br>
+      Nous vous renverrons un mail quelques jours avant le début de la formation afin de vous communiquer les dernières informations utiles.<br>
+      Restant à votre disposition.<br><br>
+      A bientôt! <br><br>"
+      mail_signature_html: "L'équipe Unloqd, <br>
+      <a href='www.unloqd.be' target='_blank'>www.unloqd.be</a> <br>
+      <a href='mailto:mailys@unloqd.be'>mailys@unloqd.be</a> <br>
+      <a href='tel:0487904404'>0487/90.44.04</a> <br>"
   bookings:
     new:
       email: "Adresse email"
@@ -11,7 +42,6 @@ fr:
       workshop: "Choisissez une date"
       send: "Envoyer"
       formTitle: "Formulaire d'inscription"
-
   pages:
     home:
       titleMain_html: "Votre site web <br> en une journée!"

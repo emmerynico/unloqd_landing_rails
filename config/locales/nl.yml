@@ -1,4 +1,37 @@
 nl:
+  subject_new_booking: "Jouw inschrijving voor de opleiding 'Jouw website in 1 dag'"
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+
+  booking_mailer:
+    new_booking:
+      greeting_html: "Dag %{firstname}, <br><br>"
+      mail_content_html: "Bedankt voor jouw inschrijving voor onze opleiding 'Jouw website in 1 dag'. <br><br>
+      De opleiding zal van start gaan om 9:00 en eindigt om 17:00, in de Connections winkel. <br>We verwelkomen jou graag vanaf 8:45 met een tasje koffie. <br><br>
+      Om jouw inschrijving te vervolledigen vragen we jou om het bedrag van €302,5 (€250 + €52,5 BTW) te storten op de volgende bankrekening, <strong>vóór 3 November 2020</strong>: <br>
+      Maïlys Renson <br>
+      BE69 0636 8884 9878 <br>
+      Mededeling: Naam+Voornaam+Stad <br><br>
+      Vervolgens zullen we jouw factuur opsturen. <br>Indien jouw BTW-nummer op de factuur dient te staan, gelieve deze via e-mail te vermelden.<br><br>
+      Gezien de huidige gezondheidsvoorschriften, zullen al onze opleidingen doorgaan rekening houdende met de nodige voorzorgsmaatregelen. We blijven natuurlijk de situatie dagelijks opvolgen en zullen jou op de hoogte houden indien er verandering komt. Indien de situatie ons verplicht om de opleiding af te zeggen, zullen we een nieuwe datum inplannen. Indien deze datum niet voor jou past, zullen we jou terugbetalen.<br><br>
+      Voor de opleiding zelf, vragen we jou om het volgende mee te nemen:<br>
+      <ul>
+      <li>Een laptop (gelieve ons op voorhand iets te laten weten indien je geen laptop hebt, we zullen dan een oplossing zoeken)</li>
+      <li>Een paar foto’s van goede kwaliteit van de zaak die je wilt promoten</li>
+      <li>Een voorbereiding van de teksten die je graag op jouw website wil gebruiken</li>
+      <li>Je mondmasker
+      </ul> <br>
+      Tijdens deze opleiding zullen we jou begeleiden in het creëren van jouw website. We zullen jou alle nodige tips en tricks geven om een efficiënte website te maken die past bij jouw persoonlijkheid.<br><br>
+      Een paar dagen voor de opleiding zullen we nog een laatste e-mail sturen met de laatste nodige informatie.<br>
+      We blijven ter beschikking indien je nog vragen hebt,<br><br>
+      
+      Tot binnenkort! <br><br>"
+      mail_signature_html: "Het Unloqd team, <br>
+      <a href='www.unloqd.be' target='_blank'>www.unloqd.be</a> <br>
+      <a href='mailto:mailys@unloqd.be'>mailys@unloqd.be</a> <br>
+      <a href='tel:0487904404'>0487/90.44.04</a> <br>"
+
   bookings:
     new:
       email: "Email"
