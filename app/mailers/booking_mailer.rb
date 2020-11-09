@@ -8,6 +8,8 @@ class BookingMailer < ApplicationMailer
   def new_booking(booking)
     @booking = booking
 
-    mail to: @booking.email
+    mail to: @booking.email,
+        bcc: "mailys@unloqd.be",
+        subject: t('subject_new_booking')
   end
 end
