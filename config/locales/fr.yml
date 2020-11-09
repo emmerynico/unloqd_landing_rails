@@ -2,7 +2,9 @@ fr:
   time:
     formats:
       long: "%Y-%m-%d %H:%M:%S"
-
+  date:
+    formats:
+      long: "%d-%m-%Y"
   bookings:
     new:
       email: "Adresse email"
@@ -71,6 +73,8 @@ fr:
       yourmail_html: "<input name='email' class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup' id='inputEmail' type='email' placeholder='VOTRE ADRESSE MAIL...'/>"
       address: "ADRESSE"
       phone: "TELEPHONE"
+      corona: "Suite aux nouvelles mesures COVID prises par le gouvernement,
+          nous nous voyons dans l'obligation de reporter l'ensemble de nos formations."
 
 
 

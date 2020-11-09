@@ -16,7 +16,8 @@
           <div class="wrapper">
              <div style="margin-bottom:35px;">
               <label style="color:grey;  font-size:16px;"><%= t('.workshop') %></label>
-            <div> <%= f.select :workshop, Booking::WORKSHOPS, class:"string required", include_blank: true, required: true   %> </div>
+              <div>  <%= f.collection_select :workshop, Workshop.all, :id, :collection_string, html_options = {class:"string required", include_blank: true, required: true} %> </div>
+
               <div class="error_date"></div>
           </div>
             <div class="row">
@@ -76,27 +77,27 @@
 
 <script>
 
-let workshopInput = document.querySelector("#booking_workshop")
-let submitButton = document.querySelector(".submit-button")
-submitButton.setAttribute("type", "button");
-let errorDate = document.querySelector(".error_date")
-workshopInput.addEventListener('change', event => {
-  if (workshopInput.value != "") {
-    submitButton.setAttribute("type", "submit");
-    errorDate.innerHTML = ``
-  } else {
-    submitButton.setAttribute("type", "button");
-    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
-  }
-});
+// let workshopInput = document.querySelector("#booking_workshop")
+// let submitButton = document.querySelector(".submit-button")
+// submitButton.setAttribute("type", "button");
+// let errorDate = document.querySelector(".error_date")
+// workshopInput.addEventListener('change', event => {
+//   if (workshopInput.value != "") {
+//     submitButton.setAttribute("type", "submit");
+//     errorDate.innerHTML = ``
+//   } else {
+//     submitButton.setAttribute("type", "button");
+//     errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+//   }
+// });
 
 
-submitButton.addEventListener('click', e => {
-  if (workshopInput.value == '') {
-    errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
-  } else {
-  }
-})
+// submitButton.addEventListener('click', e => {
+//   if (workshopInput.value == '') {
+//     errorDate.innerHTML = `<p style="color: red; font-size:12px;">Veuillez sélectionner une date</p>`
+//   } else {
+//   }
+// })
 
   let fullForm = document.querySelector("#full-form")
  fullForm.addEventListener('submit', e => {

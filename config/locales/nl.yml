@@ -1,4 +1,10 @@
 nl:
+  time:
+    formats:
+      long: "%Y-%m-%d %H:%M:%S"
+  date:
+    formats:
+      long: "%d-%m-%Y"
   bookings:
     new:
       email: "Email"
@@ -66,3 +72,4 @@ nl:
       yourmail_html: "<input name='email' class='form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0 form-signup' id='inputEmail' type='email' placeholder='Jouw emailadres...' required/>"
       address: "Adres"
       phone: "Telefoon"
+      corona: "Wegens de nieuwe COVID-maatregelen van de overheid zijn we verplicht om onze opleidingen uit te stellen"

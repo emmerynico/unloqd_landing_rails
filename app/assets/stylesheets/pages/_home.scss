@@ -1027,6 +1027,22 @@
     padding-right:0!important;
     margin-top:0!important
   }
+
+  .corona-alert {
+    color:white;
+    background-color:rgba(200,20,20,0.9);
+    padding-top: 14px;
+    padding-bottom: 14px;
+    border-radius:5px;
+  }
+
+  .corona-container{
+    padding-top: 28px;
+    padding-left: 11%;
+    padding-right:11%;
+
+  }
+
   .btn:disabled{opacity:1}
   @media screen and (max-width:1024px){
     #content-desktop{
